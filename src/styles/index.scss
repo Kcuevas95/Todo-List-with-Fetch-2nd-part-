@@ -11,3 +11,28 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.mouseOver:hover {
+    color: pink;
+}
+
+.title {
+    font-size: 100px;
+    color: pink;
+    margin-left: 180px;
+}
+
+.footer {
+    width: 600px;
+    margin-left: 40px;
+    color: pink;
+}
+
+.input {
+    width: 600px;
+    margin-left: 40px;
+}
+
+.item {
+    width: 600px;
+}
