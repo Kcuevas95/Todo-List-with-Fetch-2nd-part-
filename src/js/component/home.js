@@ -65,6 +65,18 @@ export function Home() {
 		}
 	};
 
+	// let test = () => {
+	// 	if (todo() < 0) {
+	// 		<li className="list-group-item item">
+	// 			No Message
+	// 			<div className="mouseOver" style={{ float: "right" }}>
+	// 				X
+	// 			</div>
+	// 		</li>;
+	// 	} else {
+	// 		todo();
+	// 	}
+	// };
 	return (
 		<div>
 			<h1 className="title">TODOS</h1>
@@ -80,7 +92,20 @@ export function Home() {
 					placeholder="Task"
 					name="fname"></input>
 				<div>
-					<ul>{todo}</ul>
+					{todo.length > 0 ? (
+						<ul>{todo}</ul>
+					) : (
+						<ul>
+							<li className="list-group-item item">
+								No Tasks
+								<div
+									className="mouseOver"
+									style={{ float: "right" }}>
+									X
+								</div>
+							</li>
+						</ul>
+					)}
 					<div className="list-group-item footer">
 						{todo.length} item left
 					</div>
