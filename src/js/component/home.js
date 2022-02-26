@@ -96,14 +96,7 @@ export function Home() {
 						<ul>{todo}</ul>
 					) : (
 						<ul>
-							<li className="list-group-item item">
-								No Tasks
-								<div
-									className="mouseOver"
-									style={{ float: "right" }}>
-									X
-								</div>
-							</li>
+							<li className="list-group-item item">No Tasks</li>
 						</ul>
 					)}
 					<div className="list-group-item footer">
