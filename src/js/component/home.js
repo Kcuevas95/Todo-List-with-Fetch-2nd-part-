@@ -92,7 +92,7 @@ export function Home() {
 					placeholder="Task"
 					name="fname"></input>
 				<div>
-					{todo.length > 0 ? (
+					{variable.length > 0 ? (
 						<ul>{todo}</ul>
 					) : (
 						<ul>
